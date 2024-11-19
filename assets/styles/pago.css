@@ -1,0 +1,282 @@
+header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+header nav ul {
+    padding: 0.5rem 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #981414;
+    color: #f01919;
+    list-style: none;
+}
+
+li a:hover {
+    transition: background 0.5s, border-bottom 0.5s; 
+    border-bottom: 2px solid gold; 
+    padding-bottom: 5px; 
+}
+
+
+header nav ul li {
+    padding: 0 1rem;
+}
+
+header nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+header nav ul li:nth-child(4) {
+    margin-left: auto;
+}
+
+header nav ul li button,
+header nav ul li input {
+    justify-content: flex-end;
+}
+
+header nav ul img {
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header nav ul li input {
+    border-radius: 5px;
+    width: 12rem;
+    padding: .5rem;
+    outline: none;
+    height: 2rem;
+    border: none;
+}
+
+header nav ul li button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #2C2C2C;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+footer {
+    background-color: #981414; 
+    color: white;
+    padding: 40px 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #a8a8a8;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+
+
+
+
+
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenedor h2{
+    text-align: center;
+}
+
+.carrito-compras-d {
+    flex: 1;
+    border: 1px solid #d32f2f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}   
+
+#resumen-carrito {
+    padding: 20px;
+    text-align: left
+}
+
+.campo-tarjeta {
+    position: relative;
+}
+
+.campo-tarjeta input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.logo-tarjeta {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: auto;
+}
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#formulario-pago {
+    flex: 1; 
+    color: #000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d32f2f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+#formulario-pago label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#formulario-pago input,
+#formulario-pago select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formulario-pago input:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0px 0px 4px rgba(211, 47, 47, 0.5);
+}
+
+#formulario-pago button {
+    width: 100%;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-pago button:hover {
+    background-color: #b71c1c;
+}
+
+
+#formulario-pago h2 {
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+
+.cantidad-producto {
+    flex: 1; /* Mantiene el espacio proporcional */
+    text-align: center; /* Centra horizontalmente */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Asegura que el texto esté centrado horizontalmente */
+}

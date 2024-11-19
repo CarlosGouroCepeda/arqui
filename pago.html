@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="assets/styles/pago.css">
+    <script src="assets/scripts/pago.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="assets/images/nuevologo.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <div class="carrito-compras-d">
+            <h1>Resumen de Compra</h1>
+            <div id="resumen-carrito"></div>
+            <h3 id="total-compra">Total: S/ 0.00</h3>
+        </div>
+        <form id="formulario-pago">
+            <h2>Información del Cliente</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección de envío:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="metodo-pago">Método de Pago:</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="efectivo">Efectivo</option>
+            </select>
+            
+            <label for="numero-tarjeta">Número de Tarjeta:</label>
+            <div class="campo-tarjeta">
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" maxlength="16" pattern="\d{16}" placeholder="1234 5678 9012 3456" required>
+                <img id="logo-tarjeta" class="logo-tarjeta hidden" src="">
+            </div>
+
+            <label for="codigo-descuento">Código de Descuento (opcional):</label>
+            <input type="text" id="codigo-descuento" name="codigo-descuento">
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>¿Tienes preguntas?</h4>
+                <p>Llama al +51 999 999 999</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#corporate">Información corporativa</a></li>
+                    <li><a href="#privacy">Privacidad</a></li>
+                    <li><a href="#help">Centro de ayuda</a></li>
+                    <li><a href="#terms">Condiciones de uso</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legales</h4>
+                <ul>
+                    <li><a href="#cookies">Preferencias de cookies</a></li>
+                    <li><a href="#legal">Avisos legales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h4>Síguenos en:</h4>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><img src="./assets/images/facebook-new.png" alt="Facebook"></a>
+                    <a href="#" title="Instagram"><img src="./assets/images/instagram-new.png" alt="Instagram"></a>
+                    <a href="#" title="TikTok"><img src="./assets/images/tiktok-new.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
