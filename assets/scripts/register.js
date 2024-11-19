@@ -5,7 +5,7 @@ document.getElementById("register-form").addEventListener("submit",async (e)=>{
   const username = e.target.children.user.value;
   const email = e.target.children.email.value;
   const password = e.target.children.password.value;
-  const res = await fetch("http://localhost:3000/api/usuarios/register",{
+  const res = await fetch("https://arqui-backend.azurewebsites.net/api/usuarios/register",{
     method:"POST",
     headers:{
       "Access-Control-Allow-Origin": "*",

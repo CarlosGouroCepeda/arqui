@@ -4,7 +4,7 @@ document.getElementById("login-form").addEventListener("submit",async (e)=>{
   e.preventDefault();
   const username = e.target.children.user.value;
   const password = e.target.children.password.value;
-  const res = await fetch("http://localhost:3000/api/usuarios/login",{
+  const res = await fetch("https://arqui-backend.azurewebsites.net/api/usuarios/login",{
     method:"POST",
     headers:{
       "Access-Control-Allow-Origin": "*",
